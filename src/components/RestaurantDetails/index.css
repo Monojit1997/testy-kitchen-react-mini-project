@@ -1,0 +1,72 @@
+.restaurant-details-container {
+  background-image: url('https://res.cloudinary.com/drjim6cqm/image/upload/v1700979800/Frame_279_afdx3w.png');
+  width: 1440px;
+  height: 372.52px;
+  top: 144px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+}
+.restaurant-name-and-location-container {
+  width: 795px;
+  height: 280px;
+  border-radius: 8px;
+  display: flex;
+  margin: 10px;
+}
+.restaurant-logo {
+  width: 445px;
+  height: 280px;
+  top: 176px;
+  left: 165px;
+  border-radius: 8px;
+}
+.name-container {
+  width: 320px;
+  height: 168px;
+  top: 232px;
+  left: 640px;
+  margin-left: 20px;
+}
+.each-restaurant-name {
+  top: 232px;
+  left: 640px;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.each-restaurant-type {
+  top: 292px;
+  left: 640px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+}
+.cost-container {
+  display: flex;
+  justify-content: space-between;
+}
+.rating-icon {
+  color: #ffffff;
+}
+.each-restaurant-rating {
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #e2e8f0;
+}
+.food-item-unorder-list-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}

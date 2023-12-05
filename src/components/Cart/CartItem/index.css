@@ -1,0 +1,37 @@
+.item-img {
+  width: 136px;
+  height: 100px;
+  top: 224px;
+  left: 213px;
+  border-radius: 8px;
+}
+.fooditem-heading-and-image-container {
+  display: flex;
+  align-items: center;
+}
+.order-item-list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 10px;
+}
+.food-title {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #183b56;
+}
+.price-container {
+  display: flex;
+  align-items: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffa412;
+}

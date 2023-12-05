@@ -1,0 +1,72 @@
+.navbar-bg-container {
+  width: 1440px;
+  height: 96px;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-button {
+  width: 41px;
+  height: 16px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menu-container {
+  width: 936px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header-option-container {
+  display: flex;
+  list-style-type: none;
+}
+.header-option {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.35555556416511536px;
+  text-align: left;
+  color: #334155;
+}
+.logout-button {
+  width: 73px;
+  height: 32px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 8px;
+  background-color: #f7931e;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+.header-heading-name {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #f7931e;
+}

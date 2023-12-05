@@ -1,0 +1,70 @@
+.restaurants-container {
+  width: 1440px;
+  height: 740px;
+  margin-top: 50px;
+  padding: 10px;
+}
+.main-heading {
+  font-family: DM Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #183b56;
+}
+.heading-description {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #64748b;
+}
+.heading-and-filter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1240px;
+}
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-heading {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #475569;
+}
+.filter-box {
+  color: #475569;
+}
+.restaurant-unorder-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-left: 0px;
+}
+.horizontal-line {
+  width: 1150px;
+  top: 168px;
+  left: 165px;
+  color: #cbd2d9;
+}
+.page-change-container {
+  text-align: center;
+}
+.page-change-container-with-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  border: 1px;
+}
