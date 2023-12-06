@@ -93,7 +93,7 @@ class Cart extends Component {
   }
 
   cartEmptyView = () => (
-    <div>
+    <div testid="empty cart">
       <img
         src="https://res.cloudinary.com/dppqkea7f/image/upload/v1625831743/cart-no-order_qivsro.png"
         alt="empty cart"
@@ -162,33 +162,6 @@ class Cart extends Component {
       </>
     )
   }
-
-  cartEmptyView = () => (
-    <div>
-      <img
-        src="https://res.cloudinary.com/dppqkea7f/image/upload/v1625831743/cart-no-order_qivsro.png"
-        alt="empty cart"
-      />
-      <h1>No Order Yet!</h1>
-      <p>Your cart is empty. Add something from the menu.</p>
-      <Link to="/" style={{textDecoration: 'none'}}>
-        <button type="button">Order Now</button>
-      </Link>
-    </div>
-  )
-
-  // payment successful view
-
-  paymentSuccessfulView = () => (
-    <div>
-      <FaCheckCircle />
-      <h1>Payment Successful</h1>
-      <p>Thank you for ordering Your payment is successfully completed.</p>
-      <Link to="/" style={{textDecoration: 'none'}}>
-        <button type="button">Go To Home Page</button>
-      </Link>
-    </div>
-  )
 
   goToHomePage = () => {
     const {history} = this.props

@@ -70,7 +70,7 @@ class RestaurantDetails extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="jobs-loader-container" data-testid="loader">
+    <div className="jobs-loader-container" testid="restaurant-details-loader">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
@@ -104,7 +104,7 @@ class RestaurantDetails extends Component {
           <div className="restaurant-name-and-location-container">
             <img
               src={currentRestaurantsDetails.imageUrl}
-              alt={currentRestaurantsDetails.name}
+              alt="restaurant"
               className="restaurant-logo"
             />
             <div className="name-container">

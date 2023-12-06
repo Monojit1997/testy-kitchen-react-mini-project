@@ -71,14 +71,14 @@ class PopularRestaurants extends Component {
     return (
       <div className="page-change-container-with-button">
         <FaAngleLeft
-          data-testid="pagination-left-button"
+          testid="pagination-left-button"
           onClick={this.onDecresePageNumber}
         />
         <p>
-          <span data-testid="active-page-number">{activePage}</span> of 4
+          <span testid="active-page-number">{activePage}</span> of 4
         </p>
         <FaAngleRight
-          data-testid="pagination-right-button"
+          testid="pagination-right-button"
           onClick={this.onIncreasePageNumber}
         />
       </div>
@@ -164,10 +164,7 @@ class PopularRestaurants extends Component {
   )
 
   renderLoadingView = () => (
-    <div
-      className="jobs-loader-container"
-      data-testid="restaurants-list-loader"
-    >
+    <div className="jobs-loader-container" testid="restaurants-list-loader">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )

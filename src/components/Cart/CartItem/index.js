@@ -20,7 +20,7 @@ class CartItem extends Component {
     const price = eachCartItem.cost * eachCartItem.quantity
     console.log(price)
     return (
-      <li className="order-item-list-container" data-testid="cartItem">
+      <li className="order-item-list-container" testid="cartItem">
         <div className="fooditem-heading-and-image-container">
           <img
             src={eachCartItem.imageUrl}
@@ -33,19 +33,19 @@ class CartItem extends Component {
           <div className="each-item-counter-container">
             <button
               aria-label="minus"
-              data-testid="decrement-quantity"
+              testid="decrement-quantity"
               type="button"
               className="minus-icon-container"
               onClick={this.decrement}
             >
               <HiOutlineMinusSm className="minus-icon" />
             </button>
-            <p data-testid="item-quantity" className="count-value">
+            <p testid="item-quantity" className="count-value">
               {eachCartItem.quantity}
             </p>
             <button
               aria-label="plus"
-              data-testid="increment-quantity"
+              testid="increment-quantity"
               type="button"
               className="plus-icon-container"
               onClick={this.increment}
@@ -56,7 +56,7 @@ class CartItem extends Component {
         </div>
         <div className="price-container">
           <BiRupee />
-          <p>{eachCartItem.cost}</p>
+          <p testid="total-price">{eachCartItem.cost}</p>
         </div>
       </li>
     )
