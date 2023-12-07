@@ -93,7 +93,7 @@ class Cart extends Component {
   }
 
   cartEmptyView = () => (
-    <div testid="empty cart">
+    <div data-testid="empty cart">
       <img
         src="https://res.cloudinary.com/dppqkea7f/image/upload/v1625831743/cart-no-order_qivsro.png"
         alt="empty cart"
