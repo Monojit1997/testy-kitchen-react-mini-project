@@ -93,7 +93,7 @@ class Cart extends Component {
   }
 
   cartEmptyView = () => (
-    <div data-testid="empty cart">
+    <div testid="empty cart">
       <img
         src="https://res.cloudinary.com/dppqkea7f/image/upload/v1625831743/cart-no-order_qivsro.png"
         alt="empty cart"
@@ -145,7 +145,7 @@ class Cart extends Component {
               <h1>Order Total:</h1>
               <div className="price-container">
                 <BiRupee />
-                <p data-testid="total-price">{totalAmount}.00</p>
+                <p testid="total-price">{totalAmount}.00</p>
               </div>
             </div>
             <div className="payment-button-container">

@@ -80,7 +80,7 @@ class MenuList extends Component {
     const {eachItem} = this.props
     const {id, cost, imageUrl, name, rating} = eachItem
     return (
-      <li className="food-list-container" data-testid="foodItem">
+      <li className="food-list-container" testid="foodItem">
         <img src={imageUrl} alt={name} className="food-image" />
         <div className="food-name-price-container">
           <h1 className="food-name">{name}</h1>
@@ -98,23 +98,19 @@ class MenuList extends Component {
                 aria-label="decrement"
                 type="button"
                 className="icon-container"
-                data-testid="decrement-count"
+                testid="decrement-count"
                 onClick={this.decrementCartItemQuantity}
               >
                 <HiOutlineMinusSm className="icon" />
               </button>
-              <p
-                type="button"
-                className="count-value"
-                data-testid="active-count"
-              >
+              <p type="button" className="count-value" testid="active-count">
                 {quantity}
               </p>
               <button
                 aria-label="increment"
                 type="button"
                 className="icon-container"
-                data-testid="increment-count"
+                testid="increment-count"
                 onClick={this.incrementCartItemQuantity}
               >
                 <BsPlus className="icon" />
