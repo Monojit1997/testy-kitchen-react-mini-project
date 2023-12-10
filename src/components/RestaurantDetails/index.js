@@ -120,18 +120,18 @@ class RestaurantDetails extends Component {
               <div className="cost-container">
                 <div>
                   <FaStar className="rating-icon" />
-                  <span className="each-restaurant-rating">
+                  <p className="each-restaurant-rating">
                     {currentRestaurantsDetails.rating}
-                  </span>
+                  </p>
                   <p className="each-restaurant-rating">
                     {currentRestaurantsDetails.reviewCount}+ Ratings
                   </p>
                 </div>
                 <div>
-                  <span className="each-restaurant-rating">
+                  <p className="each-restaurant-rating">
                     <FaRupeeSign />
                     {currentRestaurantsDetails.costForTwo}
-                  </span>
+                  </p>
                   <p className="each-restaurant-rating">Cost for two</p>
                 </div>
               </div>

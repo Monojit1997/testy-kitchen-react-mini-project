@@ -83,14 +83,14 @@ class MenuList extends Component {
       <li className="food-list-container" testid="foodItem">
         <img src={imageUrl} alt={name} className="food-image" />
         <div className="food-name-price-container">
-          <h1 className="food-name">{name}</h1>
+          <p className="food-name">{name}</p>
           <div className="food-rating-container">
             <FaRupeeSign />
-            <span className="food-cost">{cost}</span>
+            <p className="food-cost">{cost}</p>
           </div>
           <div className="food-rating-container">
             <FaStar className="star" />
-            <span className="food-rating">{rating}</span>
+            <p className="food-rating">{rating}</p>
           </div>
           {isFound ? (
             <div className="each-item-counter-container" id={id}>

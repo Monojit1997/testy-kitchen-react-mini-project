@@ -14,7 +14,7 @@ const App = () => (
     <ProtectedRoute exact path="/" component={Home} />
     <ProtectedRoute
       exact
-      path="/restaurants-list/:id"
+      path="/restaurant/:id"
       component={RestaurantDetails}
     />
     <ProtectedRoute exact path="/cart" component={Cart} />

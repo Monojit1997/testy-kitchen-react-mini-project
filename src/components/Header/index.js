@@ -11,14 +11,16 @@ const Header = props => {
   return (
     <nav className="navbar-bg-container">
       <Link to="/" className="nav-link">
-        <img
-          src="https://res.cloudinary.com/drjim6cqm/image/upload/v1700491532/Vector_v240xj.png"
-          alt="website logo"
-          className="jobby-logo"
-        />
+        <div>
+          <img
+            src="https://res.cloudinary.com/drjim6cqm/image/upload/v1700491532/Vector_v240xj.png"
+            alt="website logo"
+            className="jobby-logo"
+          />
+          <h1 className="header-heading-name">Tasty Kitchens</h1>
+        </div>
       </Link>
       <div className="menu-container">
-        <h1 className="header-heading-name">Tasty Kitchens</h1>
         <ul className="header-option-container">
           <Link to="/" className="nav-link">
             <li className="header-option">Home</li>
@@ -26,11 +28,15 @@ const Header = props => {
           <Link to="/cart" className="nav-link">
             <li className="header-option">Cart</li>
           </Link>
+          <button
+            type="button"
+            className="logout-button"
+            onClick={onClickLogout}
+          >
+            Logout
+          </button>
         </ul>
       </div>
-      <button type="button" className="logout-button" onClick={onClickLogout}>
-        Logout
-      </button>
     </nav>
   )
 }
