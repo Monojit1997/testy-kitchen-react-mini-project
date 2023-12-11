@@ -83,7 +83,7 @@ class MenuList extends Component {
       <li className="food-list-container" testid="foodItem">
         <img src={imageUrl} alt={name} className="food-image" />
         <div className="food-name-price-container">
-          <p className="food-name">{name}</p>
+          <h1 className="food-name">{name}</h1>
           <div className="food-rating-container">
             <FaRupeeSign />
             <p className="food-cost">{cost}</p>

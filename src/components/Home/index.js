@@ -210,7 +210,7 @@ class Home extends Component {
         </div>
         <div className="filter-container">
           <MdSort />
-          <span className="filter-heading">Sort by</span>
+          <p className="filter-heading">Sort by</p>
           <select
             className="filter-box"
             onChange={this.onChangeSortByOption}

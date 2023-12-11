@@ -11,7 +11,7 @@ const Restaurant = props => {
       <li className="eachrestaurant-container" testid="restaurant-item">
         <img src={imageUrl} alt="restaurant" className="restaurants-image" />
         <div className="restaurant-name-container">
-          <p className="restaurant-name">{name}</p>
+          <h1 className="restaurant-name">{name}</h1>
           <p className="restaurant-type">{cuisine}</p>
           <div className="rating-container">
             <FaStar className="star" />
