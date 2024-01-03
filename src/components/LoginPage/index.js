@@ -65,7 +65,7 @@ class Login extends Component {
             />
           </div>
           <h1 className="testy-kitchen-heading">Tasty Kitchens</h1>
-          <h1>Login</h1>
+          <h1 className="login-heading">Login</h1>
           <form className="form-container" onSubmit={this.submitForm}>
             <div className="input-container">
               <label htmlFor="username" className="label-style">
@@ -99,7 +99,7 @@ class Login extends Component {
             </button>
           </form>
         </div>
-        <div>
+        <div className="image-container">
           <img
             src="https://res.cloudinary.com/drjim6cqm/image/upload/v1700491605/Rectangle_1456_x2usyl.png"
             className="login-page-image"

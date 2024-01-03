@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-around;
 }
-
+.image-container {
+  order: 2;
+}
 .login-container {
   padding: 10px;
   width: 456px;
@@ -14,7 +16,9 @@
   align-self: center;
   background-color: #fefeff;
   box-shadow: 2px 2px 2px 2px #070707;
+  order: 1;
 }
+
 .logo-container {
   padding: 2px;
   text-align: center;
@@ -80,4 +84,52 @@
   margin-left: 10px;
   text-align: left;
   color: #ef4444;
+}
+.login-heading {
+  font-family: DM Sans;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #0f172a;
+}
+@media all and (max-width: 767px) {
+  .login-bg-container {
+    flex-direction: column;
+  }
+  .image-container {
+    order: 1;
+    text-align: center;
+  }
+  .login-container {
+    order: 2;
+    height: 60vh;
+  }
+  .logo-container {
+    display: none;
+  }
+  .testy-kitchen-heading {
+    display: none;
+  }
+  .login-heading {
+    display: none;
+  }
+  .login-page-image {
+    width: 387px;
+    height: 387px;
+    top: -38px;
+    left: 56px;
+    border-radius: 249.94px;
+  }
+  .login-container {
+    width: 360px;
+    flex-shrink: 1;
+  }
+  .input-style {
+    width: 300px;
+  }
+  .login-button {
+    width: 300px;
+  }
 }
