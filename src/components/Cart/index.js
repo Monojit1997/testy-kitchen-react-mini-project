@@ -93,7 +93,7 @@ class Cart extends Component {
   }
 
   cartEmptyView = () => (
-    <div testid="empty cart">
+    <div>
       <img
         src="https://res.cloudinary.com/dppqkea7f/image/upload/v1625831743/cart-no-order_qivsro.png"
         alt="empty cart"
@@ -107,12 +107,16 @@ class Cart extends Component {
   )
 
   paymentSuccessfulView = () => (
-    <div>
-      <FaCheckCircle />
-      <h1>Payment Successful</h1>
-      <p>Thank you for ordering Your payment is successfully completed.</p>
+    <div className="payment-successful-container">
+      <FaCheckCircle className="payment-done" />
+      <h1 className="successful-heading">Payment Successful</h1>
+      <p className="successful-paragraph">
+        Thank you for ordering Your payment is successfully completed.
+      </p>
       <Link to="/" style={{textDecoration: 'none'}}>
-        <button type="button">Go To Home Page</button>
+        <button type="button" className="home-page-button">
+          Go To Home Page
+        </button>
       </Link>
     </div>
   )
@@ -130,7 +134,7 @@ class Cart extends Component {
               <h1 className="order-item-heading">Quantity</h1>
               <h1 className="order-item-heading">Price</h1>
             </div>
-            <ul>
+            <ul className="food-order-item-list-container">
               {cartData.map(eachItem => (
                 <CartItem
                   key={eachItem.id}
@@ -142,10 +146,10 @@ class Cart extends Component {
             </ul>
             <hr />
             <div className="total-price-container">
-              <h1>Order Total:</h1>
+              <h1 className="order-total-heading">Order Total:</h1>
               <div className="price-container">
                 <BiRupee />
-                <p testid="total-price">{totalAmount}.00</p>
+                <p>{totalAmount}.00</p>
               </div>
             </div>
             <div className="payment-button-container">

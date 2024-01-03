@@ -8,7 +8,7 @@ const Restaurant = props => {
   const {id, name, cuisine, imageUrl, userRating} = eachItem
   return (
     <Link to={`restaurant/${id}`} className="link-style">
-      <li className="eachrestaurant-container" testid="restaurant-item">
+      <li className="eachrestaurant-container">
         <img src={imageUrl} alt="restaurant" className="restaurants-image" />
         <div className="restaurant-name-container">
           <h1 className="restaurant-name">{name}</h1>

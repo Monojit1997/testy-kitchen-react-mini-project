@@ -75,17 +75,11 @@ class Home extends Component {
     const {activePage} = this.state
     return (
       <div className="page-change-container-with-button">
-        <FaAngleLeft
-          testid="pagination-left-button"
-          onClick={this.onDecresePageNumber}
-        />
+        <FaAngleLeft onClick={this.onDecresePageNumber} />
         <p>
-          <span testid="active-page-number">{activePage}</span> of 4
+          <span>{activePage}</span> of 4
         </p>
-        <FaAngleRight
-          testid="pagination-right-button"
-          onClick={this.onIncreasePageNumber}
-        />
+        <FaAngleRight onClick={this.onIncreasePageNumber} />
       </div>
     )
   }
@@ -173,7 +167,7 @@ class Home extends Component {
   }
 
   renderLoadingView = () => (
-    <div testid="restaurants-offers-loader" className="jobs-loader-container">
+    <div className="jobs-loader-container">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
@@ -241,7 +235,7 @@ class Home extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="jobs-loader-container" testid="restaurants-list-loader">
+    <div className="jobs-loader-container">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
@@ -265,7 +259,7 @@ class Home extends Component {
     return (
       <>
         <Header />
-        <div className="carousal-container">{this.renderAlloffers()}</div>
+        <div>{this.renderAlloffers()}</div>
         <div className="restaurants-container">
           {this.onRenderHeadingSection()}
           <hr className="horizontal-line" />

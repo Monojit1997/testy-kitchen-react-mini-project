@@ -52,3 +52,88 @@
   text-align: end;
   margin-right: 6%;
 }
+.food-order-item-list-container {
+  margin-left: 0px;
+}
+.payment-successful-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.payment-done {
+  color: #22c55e;
+  height: 38px;
+  width: 38px;
+}
+.successful-heading {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+
+  line-height: 20px;
+  text-align: center;
+  color: #1e293b;
+}
+.successful-paragraph {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+
+  line-height: 20px;
+  text-align: center;
+  color: #64748b;
+}
+.home-page-button {
+  position: static;
+  background: #f7931e;
+  border-radius: 8px;
+  position: static;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  color: #ffffff;
+  height: 32px;
+  width: auto;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+@media all and (max-width: 767px) {
+  .order-item-heading-container {
+    display: none;
+  }
+  .main-background-container {
+    width: 360px;
+  }
+  .order-item-preview-container {
+    width: 360px;
+    height: inherit;
+    top: 144px;
+    border: 1px;
+    background-color: transparent;
+    padding: 10px;
+  }
+  .order-total-heading {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .payment-successful-container {
+    height: 100vh;
+  }
+  .successful-heading {
+    font-size: 23px;
+  }
+  .successful-paragraph {
+    font-size: 16px;
+  }
+}

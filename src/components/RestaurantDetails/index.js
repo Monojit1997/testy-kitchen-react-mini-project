@@ -70,7 +70,7 @@ class RestaurantDetails extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="jobs-loader-container" testid="restaurant-details-loader">
+    <div className="jobs-loader-container">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
@@ -166,7 +166,7 @@ class RestaurantDetails extends Component {
     return (
       <>
         <Header />
-        <div className="job-item-details-container">
+        <div className="restaurant-item-details-container">
           {this.renderReataurantResults()}
         </div>
         <Footer />

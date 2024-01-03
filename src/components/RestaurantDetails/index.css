@@ -70,3 +70,51 @@
   list-style-type: none;
   flex-wrap: wrap;
 }
+@media all and (max-width: 767px) {
+  .restaurant-item-details-container {
+    width: 360px;
+    height: inherit;
+    top: 64px;
+  }
+  .restaurant-details-container {
+    width: 360px;
+    height: inherit;
+  }
+  .restaurant-logo {
+    width: 121px;
+    height: 121px;
+    top: -54px;
+    left: -68px;
+    border-radius: 133.98px;
+    align-self: center;
+  }
+  .name-container {
+    width: 360px;
+    height: 124px;
+    top: 96px;
+    left: 169px;
+  }
+  .each-restaurant-name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+  .each-restaurant-type {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 138px;
+  }
+  .cost-container {
+    width: 175px;
+    height: 124px;
+    top: 96px;
+    left: 169px;
+  }
+}

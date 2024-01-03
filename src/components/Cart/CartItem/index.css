@@ -35,3 +35,21 @@
   text-align: left;
   color: #ffa412;
 }
+@media all and (max-width: 767px) {
+  .order-item-list-container {
+    margin-bottom: 10px;
+    flex-direction: column;
+    width: 360px;
+  }
+  .food-title {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+}
+
+@media all and (min-width: 767px) {
+}
